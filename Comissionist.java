@@ -3,7 +3,7 @@ package com.company;
 public class Comissionist extends Employee {
     private int deliveryAmount;
     private float payPerDelivery;
-    private float salario;
+    private double salario;
 
     public Comissionist(int dni, String nombre, String apellido, String email, int telefono, String fechaIngreso, float salarioBase, int deliveryAmount,float payPerDelivery) {
         super(dni, nombre, apellido, email, telefono, fechaIngreso, salarioBase);
@@ -28,7 +28,7 @@ public class Comissionist extends Employee {
         this.payPerDelivery = payPerDelivery;
     }
 
-    public float getSalario() {
+    public double getSalario() {
         return salario;
     }
 

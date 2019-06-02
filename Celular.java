@@ -5,7 +5,7 @@ public class Celular {
     private int id;
     private String modelo;
     private String marca;
-    private int numero;
+    private double numero;
 
     public Celular(String modelo, String marca, int numero){
         this.id=getIdCount();
@@ -39,11 +39,11 @@ public class Celular {
         this.marca = marca;
     }
 
-    public int getNumero() {
+    public double getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(double numero) {
         this.numero = numero;
     }
 
