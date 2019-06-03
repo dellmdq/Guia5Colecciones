@@ -56,7 +56,7 @@ public class CommercialDepartment{
         return exists;
     }
 
-    public int getDistributorsAmountMinimunDepartures(int minDepartures){
+    public int getDistributorsAmountByMinimunDepartures(int minDepartures){
         int dist=0;
         if(minDepartures>0){
             for(Employee d : employeeList){
@@ -68,6 +68,16 @@ public class CommercialDepartment{
         return dist;
     }
 
+    public int getSalesmenAmountByMaxComission(double maxComission){
+        int salesMen=0;
+        if(maxComission>0){
+            for(Employee s : employeeList){
+                if(s instanceof  Salesman && ((Salesman)s).getComisionPercentage()<maxComission)
+                    salesMen++;
+            }
+        }
+        return salesMen++;
+    }
 
     ///public void applyRaise(double raisePercentage){
 

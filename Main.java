@@ -83,8 +83,14 @@ public class Main {
 
         comDepto.showEmployeeList();
 
-        int dist=comDepto.getDistributorsAmountMinimunDepartures(5);
-        System.out.println(dist);
+        int minDep=5;
+        String distributorsQuantityMessage="La cantidad de vendedores con mas de %d salidas es: %d";
+        System.out.println(String.format(distributorsQuantityMessage,minDep,comDepto.getDistributorsAmountByMinimunDepartures(minDep)));
+
+        double maxCom=5;
+        String salesMenQuantityMessage="The amount of salesmen with a sales comission less than %.2f is %d";
+        System.out.println(String.format(salesMenQuantityMessage,maxCom,comDepto.getSalesmenAmountByMaxComission(maxCom)));
+
 
     }
 }

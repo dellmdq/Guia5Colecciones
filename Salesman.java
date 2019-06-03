@@ -70,7 +70,13 @@ public class Salesman extends Employee {
         return base.concat(String.format(message, getComisionPercentage(), getSalesAmount(),getComission(), getSalario()));
     }
 
+    public void llamar(){
+        System.out.println("Llamando...");
+    }
 
+    public void atender(){
+        System.out.println("Atendiendo...");
+    }
 
 
 }
