@@ -69,4 +69,8 @@ public class Salesman extends Employee {
 
         return base.concat(String.format(message, getComisionPercentage(), getSalesAmount(),getComission(), getSalario()));
     }
+
+
+
+
 }

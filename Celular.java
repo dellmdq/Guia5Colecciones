@@ -5,7 +5,7 @@ public class Celular {
     private int id;
     private String modelo;
     private String marca;
-    private double numero;
+    private int numero;
 
     public Celular(String modelo, String marca, int numero){
         this.id=getIdCount();
@@ -39,16 +39,16 @@ public class Celular {
         this.marca = marca;
     }
 
-    public double getNumero() {
+    public int getNumero() {
         return numero;
     }
 
-    public void setNumero(double numero) {
+    public void setNumero(int numero) {
         this.numero = numero;
     }
 
     public String toString(){
-        String message="CELULAR\nId: %d\nModelo: %s\nMarca:%s\nNumero: %d\n---";
+        String message="CELULAR\nId: %d\nModelo: %s\nMarca:%s\nNumero: %d";
 
         return String.format(message,getId(),getModelo(),getMarca(),getNumero());
     }

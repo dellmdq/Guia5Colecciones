@@ -43,7 +43,7 @@ public class CommercialDepartment{
 
     public void showEmployeeList(){
         for(Employee e : getEmployeeList()){
-            System.out.println("====================\n"+e);
+            System.out.println("\n====================\n"+e);
         }
     }
 
@@ -56,9 +56,20 @@ public class CommercialDepartment{
         return exists;
     }
 
+    public int getDistributorsAmountMinimunDepartures(int minDepartures){
+        int dist=0;
+        if(minDepartures>0){
+            for(Employee d : employeeList){
+                if(d instanceof Distributor && ((Distributor) d).getGoingOutsPerDay()>minDepartures){
+                    dist++;
+                }
+            }
+        }
+        return dist;
+    }
+
+
     ///public void applyRaise(double raisePercentage){
-
-
 
     ///public int getSalesmenQuantity();
 

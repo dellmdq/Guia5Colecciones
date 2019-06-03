@@ -94,7 +94,7 @@ public abstract class Employee {
     ///methods
     @Override
     public String toString(){
-        String message="---\nEMPLEADO\nLegajo: %d\nDNI: %d\nNombre: %s\nApellido: %s\nEmail: %s\nTelefono: %d\nFecha Ingreso: %s\nSalario Base: %.2f\n";
+        String message="\nEMPLEADO\nLegajo: %d\nDNI: %d\nNombre: %s\nApellido: %s\nEmail: %s\nTelefono: %d\nFecha Ingreso: %s\nSalario Base: %.2f\n";
 
         return String.format(message,getLegajo(),getDni(),getNombre(),getApellido(),getEmail(),getTelefono(),getFechaIngreso(),getSalarioBase());
     }

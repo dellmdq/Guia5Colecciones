@@ -39,7 +39,7 @@ public class Comissionist extends Employee {
     @Override
     public String toString() {
         String base=super.toString();
-        String message="COMISSIONIST\nDelivery Amount: %d\nPay Per Delivery: %.2f\nSalary: %.2f\n";
+        String message="COMISSIONIST\nDelivery Amount: %d\nPay Per Delivery: %.2f\nSalary: %.2f";
 
         return base.concat(String.format((message),getDeliveryAmount(),getPayPerDelivery(),getSalario()));
     }
